@@ -40,7 +40,7 @@ case $CHOOSE in
 echo
 TIME g "[1] 安装 Docker 及 DockerMan 到固件"
 cd /mnt/mmcblk2p4
-url=http://119.29.111.152:10086/d/aliDrive/update
+url=https://raw.githubusercontent.com/Wlbak/N1docker-install/main
 files=docker_20.10.12-2_N1.tar.gz
 echo
 TIME g "============================== 下载 Docker ================================="
@@ -126,7 +126,7 @@ cd /mnt/mmcblk2p4
 echo
 TIME g "开始下载安装 elecV2P 面板..."
 echo
-curl -LO http://119.29.111.152:10086/d/aliDrive/update/docker-compose.yaml
+curl -LO https://raw.githubusercontent.com/Wlbak/N1docker-install/main/docker-compose.yaml
 docker-compose up -d
 echo
 TIME g "====== 安装完成 浏览器访问 http://N1的IP:8100 进入页面进行后续相关设置 ======"
